@@ -128,11 +128,11 @@
             <artifactId>aliyun-sdk-oss</artifactId>
             <version>3.17.1</version>
         </dependency>
-        <dependency>
-            <groupId>com.yzw</groupId>
-            <artifactId>yuanzw</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.yzw</groupId>-->
+<!--            <artifactId>yuanzw</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
 
 
         <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
@@ -155,14 +155,10 @@
             <artifactId>knife4j-spring-boot-starter</artifactId>
             <version>3.0.3</version>
         </dependency>
-
-
     </dependencies>
 
-
-
-
     <build>
+        <finalName>shop-client-api</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>

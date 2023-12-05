@@ -15,5 +15,12 @@
         <result column="create_time" property="createTime" />
         <result column="update_time" property="updateTime" />
     </resultMap>
+    <select id="getCartGoodsInfo" resultType="com.yzw.shop_online.vo.CartGoodsVO">
+         select c.id,c.goods_id,g.name,g.cover as picture,c.attrs_text,c.price,g.price as nowPrice,c.selected,g.inventory as
+         stock,c.count,g.discount
+         from t_user_shopping_cart as c
+         left join t_goods as g on c.goods_id = g.id
+         where c.delete_flag = 0 and c.user_id = #{id}
+    </select>
 
 </mapper>

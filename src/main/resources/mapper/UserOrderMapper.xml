@@ -26,5 +26,4 @@
         <result column="end_time" property="endTime" />
         <result column="close_time" property="closeTime" />
     </resultMap>
-
 </mapper>
